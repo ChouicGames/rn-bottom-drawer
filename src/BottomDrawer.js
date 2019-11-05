@@ -63,7 +63,8 @@ export default class BottomDrawer extends Component {
       this.setState({ currentPosition: this.props.startUp ? this.UP_POSITION : this.DOWN_POSITION })
 
       // this.forceUpdate()
-      this.animator.hideTemporarily()
+      // this.animator.hideTemporarily()
+      this.animator._resetPosition()
     }
   }
 
